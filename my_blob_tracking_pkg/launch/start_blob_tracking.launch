@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- Start cmvision block tracking for mira -->
+    <include file="$(find my_blob_tracking_pkg)/launch/my_mira_cmvision_tc.launch"/>
+
+    <!-- Node that reads the block tracking data and publishes a cmdvel -->
+    <node name="track_blob_color_node" pkg="my_blob_tracking_pkg" type="solution_one.py" respawn="false"
+    output="screen"/>
+    <node name="mira_move_head_node" pkg="my_blob_tracking_pkg" type="solution_two.py" respawn="false"
+    output="screen"/>
+</launch>
