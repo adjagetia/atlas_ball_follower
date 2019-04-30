@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(simple_test)
+project(flexbe_loop_nodes)
 
 add_compile_options(-std=c++11)
 
@@ -54,13 +54,9 @@ include_directories(
 ##############
 
 ## example_node
-add_executable(cn src/chest_node.cpp)
-add_dependencies(cn ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(cn ${catkin_LIBRARIES})
-
-add_executable(example_node src/atlas_example_node.cpp)
-add_dependencies(example_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(example_node ${catkin_LIBRARIES})
+add_executable(chest_listener_node src/chest_node.cpp)
+add_dependencies(chest_listener_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(chest_listener_node ${catkin_LIBRARIES})
 
 #############
 ## Install ##
