@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5331c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5331c.dir/build.make CMakeFiles/cmTC_5331c.dir/build
-make[1]: Entering directory '/home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5331c.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_5331c.dir/CheckSymbolExists.c.o   -c /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_5331c
-/home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5331c.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5331c.dir/CheckSymbolExists.c.o  -o cmTC_5331c 
-CMakeFiles/cmTC_5331c.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_fcc79/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fcc79.dir/build.make CMakeFiles/cmTC_fcc79.dir/build
+make[1]: Entering directory '/home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fcc79.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fcc79.dir/CheckSymbolExists.c.o   -c /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fcc79
+/home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcc79.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fcc79.dir/CheckSymbolExists.c.o  -o cmTC_fcc79 
+CMakeFiles/cmTC_fcc79.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_5331c.dir/build.make:86: recipe for target 'cmTC_5331c' failed
-make[1]: *** [cmTC_5331c] Error 1
-make[1]: Leaving directory '/home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_5331c/fast' failed
-make: *** [cmTC_5331c/fast] Error 2
+CMakeFiles/cmTC_fcc79.dir/build.make:86: recipe for target 'cmTC_fcc79' failed
+make[1]: *** [cmTC_fcc79] Error 1
+make[1]: Leaving directory '/home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_fcc79/fast' failed
+make: *** [cmTC_fcc79/fast] Error 2
 
-File /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_30ba3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_30ba3.dir/build.make CMakeFiles/cmTC_30ba3.dir/build
-make[1]: Entering directory '/home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_30ba3.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_30ba3.dir/CheckFunctionExists.c.o   -c /home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_30ba3
-/home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30ba3.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_30ba3.dir/CheckFunctionExists.c.o  -o cmTC_30ba3 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_4330b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4330b.dir/build.make CMakeFiles/cmTC_4330b.dir/build
+make[1]: Entering directory '/home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4330b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4330b.dir/CheckFunctionExists.c.o   -c /home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4330b
+/home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4330b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4330b.dir/CheckFunctionExists.c.o  -o cmTC_4330b -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_30ba3.dir/build.make:86: recipe for target 'cmTC_30ba3' failed
-make[1]: *** [cmTC_30ba3] Error 1
-make[1]: Leaving directory '/home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_30ba3/fast' failed
-make: *** [cmTC_30ba3/fast] Error 2
+CMakeFiles/cmTC_4330b.dir/build.make:86: recipe for target 'cmTC_4330b' failed
+make[1]: *** [cmTC_4330b] Error 1
+make[1]: Leaving directory '/home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_4330b/fast' failed
+make: *** [cmTC_4330b/fast] Error 2
 
 

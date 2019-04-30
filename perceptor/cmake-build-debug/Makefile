@@ -48,10 +48,10 @@ RM = /home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jakub/kinetic_ws/src/perceptor
+CMAKE_SOURCE_DIR = /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

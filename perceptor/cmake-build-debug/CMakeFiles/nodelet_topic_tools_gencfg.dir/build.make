@@ -43,10 +43,10 @@ RM = /home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jakub/kinetic_ws/src/perceptor
+CMAKE_SOURCE_DIR = /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug
 
 # Utility rule file for nodelet_topic_tools_gencfg.
 
@@ -67,6 +67,6 @@ CMakeFiles/nodelet_topic_tools_gencfg.dir/clean:
 .PHONY : CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
 
 CMakeFiles/nodelet_topic_tools_gencfg.dir/depend:
-	cd /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jakub/kinetic_ws/src/perceptor /home/jakub/kinetic_ws/src/perceptor /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/nodelet_topic_tools_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/nodelet_topic_tools_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nodelet_topic_tools_gencfg.dir/depend
 

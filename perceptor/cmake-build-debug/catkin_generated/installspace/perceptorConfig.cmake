@@ -67,8 +67,8 @@ set(perceptor_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(perceptor_SOURCE_PREFIX /home/jakub/kinetic_ws/src/perceptor)
-  set(perceptor_DEVEL_PREFIX /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/devel)
+  set(perceptor_SOURCE_PREFIX /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor)
+  set(perceptor_DEVEL_PREFIX /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/devel)
   set(perceptor_INSTALL_PREFIX "")
   set(perceptor_PREFIX ${perceptor_DEVEL_PREFIX})
 else()

@@ -43,10 +43,10 @@ RM = /home/jakub/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jakub/kinetic_ws/src/perceptor
+CMAKE_SOURCE_DIR = /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug
 
 # Utility rule file for rosgraph_msgs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jakub/kinetic_ws/src/perceptor /home/jakub/kinetic_ws/src/perceptor /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug /home/jakub/kinetic_ws/src/atlas_ball_follower/perceptor/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 
