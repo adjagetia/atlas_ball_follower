@@ -62,7 +62,7 @@ target_link_libraries(chest_listener_node ${catkin_LIBRARIES})
 ## Install ##
 #############
 
-install(TARGETS example_node cn
+install(TARGETS chest_listener_node
         ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
         LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
         RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
