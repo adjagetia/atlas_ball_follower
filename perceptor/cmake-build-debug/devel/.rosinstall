@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jakub/kinetic_ws/src/perceptor/cmake-build-debug/devel/setup.sh

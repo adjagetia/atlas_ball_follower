@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="perceptor" type="perceptor_node" name="perceptor_node" output="screen">
+</node>
+</launch>

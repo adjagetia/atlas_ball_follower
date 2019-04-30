@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: perceptor
+Description: Description of perceptor
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lperceptor
+Requires: roscpp std_msgs
