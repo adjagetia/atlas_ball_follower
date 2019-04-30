@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="pub_wait_for_feedback">
+
+	<executable package_path="flexbe_test_flexbe_behaviors.pub_wait_for_feedback_sm" class="pub_wait_for_feedbackSM" />
+	<tagstring>pub</tagstring>
+	<author>davis</author>
+	<date>Sat Apr 27 2019</date>
+	<description>
+		pub and wait for feedback
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>
