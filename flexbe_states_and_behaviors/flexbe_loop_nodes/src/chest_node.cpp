@@ -51,7 +51,7 @@ int main(int argc, char **argv)
   count = 0;
   
   sub = n.subscribe("values", 1000, callback);
-
+  
   ros::spin();
   return 0;
 }

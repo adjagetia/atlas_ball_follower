@@ -18,6 +18,8 @@ class VisionTrackState(EventState):
     '''
     Threshold a HSV range
 
+    --- lowerHSV 		list		Lower bound HSV values.
+    --- upperHSV 		list		upper bound HSV values.
     ># img 					image from camera (uncompresed).
 
     #> value 					Value of float.
@@ -27,7 +29,7 @@ class VisionTrackState(EventState):
 
     '''
 
-    def __init__(self):
+    def __init__(self, lowerHSV=[0, 200, 0], upperHSV=[1, 255, 255]):
         '''
         Constructor
         '''

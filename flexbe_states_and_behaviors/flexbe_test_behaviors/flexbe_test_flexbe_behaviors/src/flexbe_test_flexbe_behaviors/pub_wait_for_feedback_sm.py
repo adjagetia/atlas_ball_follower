@@ -13,8 +13,8 @@ from custom_flexbe_states.publisher_float_state import PublisherFloatState
 from flexbe_states.log_key_state import LogKeyState
 from custom_flexbe_states.vision_track_state import VisionTrackState
 from flexbe_states.calculation_state import CalculationState
-from flexbe_states.decision_state import DecisionState
 from flexbe_states.wait_state import WaitState
+from flexbe_states.operator_decision_state import OperatorDecisionState
 # Additional imports can be added inside the following tags
 # [MANUAL_IMPORT]
 
@@ -46,29 +46,21 @@ class pub_wait_for_feedbackSM(Behavior):
 
 		# Behavior comments:
 
-		# O 189 35 
-		# tested. good
+		# O 333 20 
+		# Get the image, pass it to image recognition and calculate necessary rotation.
 
-		# O 429 34 
-		# tested. good
+		# O 619 629 
+		# Publish desired rotation, wait, listen for a result.
 
-		# O 732 36 
-		# TODO
-
-		# O 329 284 
-		# TODO
-
-		# O 918 639 
-		# needs to test with converging to center
-
-		# O 323 624 
-		# tested, good. Improvable if publish to this topic at launch
+		# O 242 276 
+		# Decide whether to repeat the process or finished.
 
 
 
 	def create(self):
-		# x:118 y:405, x:663 y:332
+		# x:83 y:425, x:723 y:307
 		_state_machine = OperatableStateMachine(outcomes=['finished', 'failed'])
+		_state_machine.userdata.fake_data = 0
 
 		# Additional creation code can be added inside the following tags
 		# [MANUAL_CREATE]
@@ -84,7 +76,7 @@ class pub_wait_for_feedbackSM(Behavior):
 										autonomy={'received': Autonomy.Low, 'unavailable': Autonomy.Full},
 										remapping={'message': 'img'})
 
-			# x:985 y:569
+			# x:969 y:572
 			OperatableStateMachine.add('publishTorsoRotation',
 										PublisherFloatState(topic="/values"),
 										transitions={'done': 'wait'},
@@ -102,7 +94,7 @@ class pub_wait_for_feedbackSM(Behavior):
 			OperatableStateMachine.add('findRedBall',
 										VisionTrackState(),
 										transitions={'done': 'calcDesiredTorsoRotation', 'invalid': 'failed'},
-										autonomy={'done': Autonomy.Off, 'invalid': Autonomy.Off},
+										autonomy={'done': Autonomy.Low, 'invalid': Autonomy.Full},
 										remapping={'img': 'img', 'value': 'last_data'})
 
 			# x:688 y:62
@@ -111,13 +103,6 @@ class pub_wait_for_feedbackSM(Behavior):
 										transitions={'done': 'logFloat'},
 										autonomy={'done': Autonomy.Low},
 										remapping={'input_value': 'last_data', 'output_value': 'result_data'})
-
-			# x:241 y:316
-			OperatableStateMachine.add('decisionToRunAgain',
-										DecisionState(outcomes=['adjust', 'done'], conditions=self.decision),
-										transitions={'adjust': 'getImage', 'done': 'finished'},
-										autonomy={'adjust': Autonomy.High, 'done': Autonomy.High},
-										remapping={'input_value': 'result_data'})
 
 			# x:729 y:571
 			OperatableStateMachine.add('wait',
@@ -128,9 +113,15 @@ class pub_wait_for_feedbackSM(Behavior):
 			# x:413 y:572
 			OperatableStateMachine.add('subscribeToResult',
 										SubscriberState(topic="/result", blocking=True, clear=True),
-										transitions={'received': 'decisionToRunAgain', 'unavailable': 'failed'},
+										transitions={'received': 'decisionToRepeatOrExit', 'unavailable': 'failed'},
 										autonomy={'received': Autonomy.Low, 'unavailable': Autonomy.Full},
 										remapping={'message': 'message'})
+
+			# x:238 y:322
+			OperatableStateMachine.add('decisionToRepeatOrExit',
+										OperatorDecisionState(outcomes=['again', 'done'], hint=None, suggestion=None),
+										transitions={'again': 'getImage', 'done': 'finished'},
+										autonomy={'again': Autonomy.High, 'done': Autonomy.High})
 
 
 		return _state_machine
